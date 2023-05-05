@@ -1,0 +1,31 @@
+PS D:\devproject\wordCup> npx hardhat run scripts/deploy.ts --network goerli
+1682765601
+new worldcup deployed to 0x6F38116237d73237810894c0dbc9d7c786E2EeBd
+
+
+
+npx hardhat run scripts/deploy.ts --network goerli          
+1683986394
+new worldcup deployed to 0xf9FDf6832eEdbAF5A3000A737Fa692838Ee8f8aC
+construct_params:1683986394
+
+npx hardhat verify --network goerli  0xf9FDf6832eEdbAF5A3000A737Fa692838Ee8f8aC 1683986394
+
+
+
+
+
+PS D:\devproject\wordCup> npx hardhat run .\scripts\deployMockERc20.ts --network goerli
+totalSupply: BigNumber { value: "10000000000000000000000000" }
+new World Cup Token deployed to 0xA469B9D3E5bB02887325dE6ec527CA657e0C18b1
+
+npx hardhat verify --contract contracts/tokens/WorldCupToken.sol:WorldCupToken 0xA469B9D3E5bB02887325dE6ec527CA657e0C18b1 "World Cup Token" "WCT" 10000000000000000000000000 --network goerli
+
+
+
+PS D:\devproject\wordCup> npx hardhat run .\scripts\deploy.ts --network goerli
+1684032822
+new worldcup deployed to 0xb5722D6f490CA77d64864f7Ca5ebA4AfdAbA62Cc
+construct_params:1684032822
+
+npx hardhat verify 0xb5722D6f490CA77d64864f7Ca5ebA4AfdAbA62Cc 1684032822 --network goerli
