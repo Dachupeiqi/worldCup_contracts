@@ -2,7 +2,7 @@ import { ethers } from "hardhat";
 
 async function main() {
   // world cup token
-  let token = '0xA469B9D3E5bB02887325dE6ec527CA657e0C18b1'
+  let token = '0xf9FDf6832eEdbAF5A3000A737Fa692838Ee8f8aC'
 
   const Distributor = await ethers.getContractFactory("WorldCupDistributor");
   const distributor = await Distributor.deploy(token);
